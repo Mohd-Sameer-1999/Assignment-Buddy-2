@@ -167,20 +167,20 @@ public class TakeNotes extends Fragment {
                                     if(takeNotesOpening == 10){
                                         BottomSheetMaterialDialog mDialog = new BottomSheetMaterialDialog.Builder(getActivity())
                                                 .setTitle("Wohooooooo!")
-                                                .setMessage("You just used TakeNotes for 10 times, way to go!")
+                                                .setMessage("You just used AssignmentBuddy for 10 times, way to go!")
                                                 .setAnimation("confetti.json")
-                                                .setPositiveButton("Share and Feel Proud",R.drawable.share_now, new MaterialDialog.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(DialogInterface dialogInterface, int which) {
-                                                        vibrateDeviceParty();
-                                                        Intent intent = new Intent(Intent.ACTION_SEND);
-                                                        String shareBody = "Just Scored a 10 in TakeNotes. How Many Have You Created?\nCreate Awesome Handwritten Notes now!\n\nDownload here: https://play.google.com/store/apps/details?id=com.aaxena.takenotes";
-                                                        intent.setType("text/plain");
-                                                        intent.putExtra(Intent.EXTRA_SUBJECT,"I Created 10 Notes using TakeNotes");
-                                                        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
-                                                        startActivity(Intent.createChooser(intent, "Choose app to share achievement"));
-                                                    }
-                                                })
+//                                                .setPositiveButton("Share and Feel Proud",R.drawable.share_now, new MaterialDialog.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(DialogInterface dialogInterface, int which) {
+//                                                        vibrateDeviceParty();
+//                                                        Intent intent = new Intent(Intent.ACTION_SEND);
+//                                                        String shareBody = "Just Scored a 10 in AssignmnentBuddy. How Many Have You Created?\nCreate Awesome Handwritten Notes now!\n\nDownload here: https://play.google.com/store/apps/details?id=com.aaxena.takenotes";
+//                                                        intent.setType("text/plain");
+//                                                        intent.putExtra(Intent.EXTRA_SUBJECT,"I Created 10 Notes using TakeNotes");
+//                                                        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
+//                                                        startActivity(Intent.createChooser(intent, "Choose app to share achievement"));
+//                                                    }
+//                                                })
                                                 .setCancelable(true)
                                                 .build();
                                         mDialog.show();
@@ -188,20 +188,20 @@ public class TakeNotes extends Fragment {
                                     else if(takeNotesOpening == 20){
                                         BottomSheetMaterialDialog mDialog = new BottomSheetMaterialDialog.Builder(getActivity())
                                                 .setTitle("Nice Going!")
-                                                .setMessage("You just used TakeNotes for 20 times, great going!")
+                                                .setMessage("You just used AssignmentBuddy for 20 times, great going!")
                                                 .setAnimation("confetti.json")
-                                                .setPositiveButton("Share and Feel Proud",R.drawable.share_now, new MaterialDialog.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(DialogInterface dialogInterface, int which) {
-                                                        vibrateDeviceParty();
-                                                        Intent intent = new Intent(Intent.ACTION_SEND);
-                                                        String shareBody = "Just Scored a 20 in TakeNotes. How Many Have You Created?\nCreate Awesome Handwritten Notes now!\n\nDownload here: https://play.google.com/store/apps/details?id=com.aaxena.takenotes";
-                                                        intent.setType("text/plain");
-                                                        intent.putExtra(Intent.EXTRA_SUBJECT,"I Created 20 Notes using TakeNotes");
-                                                        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
-                                                        startActivity(Intent.createChooser(intent, "Choose app to share achievement"));
-                                                    }
-                                                })
+//                                                .setPositiveButton("Share and Feel Proud",R.drawable.share_now, new MaterialDialog.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(DialogInterface dialogInterface, int which) {
+//                                                        vibrateDeviceParty();
+//                                                        Intent intent = new Intent(Intent.ACTION_SEND);
+//                                                        String shareBody = "Just Scored a 20 in TakeNotes. How Many Have You Created?\nCreate Awesome Handwritten Notes now!\n\nDownload here: https://play.google.com/store/apps/details?id=com.aaxena.takenotes";
+//                                                        intent.setType("text/plain");
+//                                                        intent.putExtra(Intent.EXTRA_SUBJECT,"I Created 20 Notes using TakeNotes");
+//                                                        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
+//                                                        startActivity(Intent.createChooser(intent, "Choose app to share achievement"));
+//                                                    }
+//                                                })
                                                 .setCancelable(true)
                                                 .build();
                                         mDialog.show();
@@ -209,19 +209,19 @@ public class TakeNotes extends Fragment {
                                     else if(takeNotesOpening == 50){
                                         BottomSheetMaterialDialog mDialog = new BottomSheetMaterialDialog.Builder(getActivity())
                                                 .setTitle("You're Unstoppable")
-                                                .setMessage("You just used TakeNotes for the 50th, great creation!")
+                                                .setMessage("You just used AssignmentBuddy for the 50th, great creation!")
                                                 .setAnimation("confetti.json")
-                                                .setPositiveButton("Share and Feel Proud",R.drawable.share_now, new MaterialDialog.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(DialogInterface dialogInterface, int which) {
-                                                        vibrateDeviceParty();
-                                                        Intent intent = new Intent(Intent.ACTION_SEND);
-                                                        String shareBody = "Just Scored a 50 in TakeNotes. How Many Have You Created?\nCreate Awesome Handwritten Notes now!\n\nDownload here: https://play.google.com/store/apps/details?id=com.aaxena.takenotes";
-                                                        intent.setType("text/plain");
-                                                        intent.putExtra(Intent.EXTRA_SUBJECT,"I Created 50 Notes using TakeNotes");
-                                                        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
-                                                        startActivity(Intent.createChooser(intent, "Choose app to share achievement")); }
-                                                })
+//                                                .setPositiveButton("Share and Feel Proud",R.drawable.share_now, new MaterialDialog.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(DialogInterface dialogInterface, int which) {
+//                                                        vibrateDeviceParty();
+//                                                        Intent intent = new Intent(Intent.ACTION_SEND);
+//                                                        String shareBody = "Just Scored a 50 in TakeNotes. How Many Have You Created?\nCreate Awesome Handwritten Notes now!\n\nDownload here: https://play.google.com/store/apps/details?id=com.aaxena.takenotes";
+//                                                        intent.setType("text/plain");
+//                                                        intent.putExtra(Intent.EXTRA_SUBJECT,"I Created 50 Notes using TakeNotes");
+//                                                        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
+//                                                        startActivity(Intent.createChooser(intent, "Choose app to share achievement")); }
+//                                                })
                                                 .setCancelable(true)
                                                 .build();
                                         mDialog.show();
@@ -231,17 +231,17 @@ public class TakeNotes extends Fragment {
                                                 .setTitle("Now That's a Milestone")
                                                 .setMessage("100th Note Huh, you just crossed one ultimate milestone.")
                                                 .setAnimation("confetti.json")
-                                                .setPositiveButton("Share and Feel Proud",R.drawable.share_now, new MaterialDialog.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(DialogInterface dialogInterface, int which) {
-                                                        vibrateDeviceParty();
-                                                        Intent intent = new Intent(Intent.ACTION_SEND);
-                                                        String shareBody = "Just Scored a 100 in TakeNotes. How Many Have You Created?\nCreate Awesome Handwritten Notes now!\n\nDownload here: https://play.google.com/store/apps/details?id=com.aaxena.takenotes";
-                                                        intent.setType("text/plain");
-                                                        intent.putExtra(Intent.EXTRA_SUBJECT,"I Created 100 Notes using TakeNotes");
-                                                        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
-                                                        startActivity(Intent.createChooser(intent, "Choose app to share achievement")); }
-                                                })
+//                                                .setPositiveButton("Share and Feel Proud",R.drawable.share_now, new MaterialDialog.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(DialogInterface dialogInterface, int which) {
+//                                                        vibrateDeviceParty();
+//                                                        Intent intent = new Intent(Intent.ACTION_SEND);
+//                                                        String shareBody = "Just Scored a 100 in TakeNotes. How Many Have You Created?\nCreate Awesome Handwritten Notes now!\n\nDownload here: https://play.google.com/store/apps/details?id=com.aaxena.takenotes";
+//                                                        intent.setType("text/plain");
+//                                                        intent.putExtra(Intent.EXTRA_SUBJECT,"I Created 100 Notes using TakeNotes");
+//                                                        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
+//                                                        startActivity(Intent.createChooser(intent, "Choose app to share achievement")); }
+//                                                })
                                                 .setCancelable(true)
                                                 .build();
                                         mDialog.show();
@@ -323,7 +323,7 @@ public class TakeNotes extends Fragment {
     }
     @SuppressLint("SetJavaScriptEnabled")
     private String createAndSaveFileFromBase64Url(String url) {
-        File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS+"/TakeNotes");
+        File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS+"/AssignmentBuddy");
         String filetype = url.substring(url.indexOf("/") + 1, url.indexOf(";"));
         if (hello.isEmpty()){
             Toast.makeText(getContext(),"Provide a Default File Name",Toast.LENGTH_SHORT).show();
@@ -392,7 +392,7 @@ public class TakeNotes extends Fragment {
                         .setSmallIcon(R.drawable.logo_take_notes)
                         .setColor(getResources().getColor(R.color.notification))
                         .setContentText("Tap to Check Now!")
-                        .setContentTitle("Your generated note got saved")
+                        .setContentTitle("Your generated Assignment got saved")
                         .setContentIntent(pIntent)
                         .build();
 

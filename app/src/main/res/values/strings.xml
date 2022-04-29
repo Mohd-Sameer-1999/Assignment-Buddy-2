@@ -38,8 +38,8 @@
     <string name="skip">SKIP</string>
     <string name="start"><b>BEGIN</b></string>
 
-    <string name="slide_1_title">Welcome to Take Notes</string>
-    <string name="slide_1_desc">The easiest and fastest way to generate handwritten notes</string>
+    <string name="slide_1_title">Welcome to Assignment Buddy</string>
+    <string name="slide_1_desc">The easiest and fastest way to generate handwritten notes and assignment</string>
 
     <string name="slide_2_title">Write almost anything on the real time paper</string>
     <string name="slide_2_desc">Adjust the spacing and lines according to your desired output</string>
@@ -57,7 +57,7 @@
     <string name="slide_7_desc">You can change themes by going in the \'Cockpit\'.</string>
 
     <string name="slide_8_title">All set, Let\'s Begin!</string>
-    <string name="slide_8_desc">Remember, there is no alternative to handwritten notes\n\nThanks for downloading Take Notes</string>
+    <string name="slide_8_desc">Remember, there is no alternative to handwritten notes and assignments\n\nThanks for downloading Assignment Buddy</string>
 
     <string name="slide_10_title">Got an Image with Text?</string>
     <string name="slide_10_desc">Tap <b>OCR!</b>\nConvert all to text, just a tap.</string>
@@ -80,7 +80,7 @@
     <string name="history_advise">History will start showing up as soon as you create notes!</string>
     <string name="splash_screen_logo">Splash Screen Logo</string>
     <string name="default_file_name">File Name</string>
-    <string name="tooltip_fileName">This name will be added to all the files saved from TakeNotes.</string>
+    <string name="tooltip_fileName">This name will be added to all the files saved from AssignmentBuddy.</string>
     <string name="profile">Profile</string>
     <string name="dev_one">Spandan Saxena</string>
     <string name="dev_two">Shrish Sharma</string>

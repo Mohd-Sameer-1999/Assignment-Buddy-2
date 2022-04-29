@@ -31,17 +31,18 @@
                 android:layout_below="@+id/greeting"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"/>
+
             <TextView
                 android:id="@+id/appInfoMain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/appLogo"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/productsansbold"
                 android:text="@string/awesomenotes"
                 android:textAlignment="center"
-                android:layout_centerHorizontal="true"
-                android:fontFamily="@font/productsansbold"
-                android:textSize="24sp"
-                android:layout_below="@+id/appLogo"/>
+                android:textSize="24sp" />
 
             <android.widget.Button
                 android:id="@+id/sign_in_button"

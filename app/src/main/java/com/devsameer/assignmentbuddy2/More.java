@@ -129,7 +129,7 @@ public class More extends Fragment {
             vibrateDevice();
             if (seenPDF){
                 try {
-                    File folderPath = new File(Environment.getExternalStorageDirectory() + "/Documents/TakeNotes");
+                    File folderPath = new File(Environment.getExternalStorageDirectory() + "/Documents/AssignmentBuddy");
                     File[] imageList = folderPath.listFiles();
                     ArrayList<File> imagesArrayList = new ArrayList<>();
                     for (File absolutePath : imageList) {
@@ -138,13 +138,13 @@ public class More extends Fragment {
                     new CreatePdfTask(getContext(), imagesArrayList).execute();
                     Toast.makeText(getContext(),"PDF Created & Saved in Documents.",Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
-                    Toast.makeText(getContext(),"No Images In TakeNotes Directory.\nCreate Notes First!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(),"No Images In AssignmentBuddy Directory.\nCreate Notes First!",Toast.LENGTH_LONG).show();
                 }
             }
             else {
             BottomSheetMaterialDialog mDialog = new BottomSheetMaterialDialog.Builder(getActivity())
                     .setTitle("Tip")
-                    .setMessage("Using this you can convert all the Images in your TakeNotes Folder into a Single PDF.")
+                    .setMessage("Using this you can convert all the Images in your AssignmentBuddy Folder into a Single PDF.")
                     .setCancelable(true)
                     .build();
             mDialog.show();
@@ -153,7 +153,7 @@ public class More extends Fragment {
                 editPDF.putBoolean("seenPDF", true);
                 editPDF.apply();
                 try {
-                    File folderPath = new File(Environment.getExternalStorageDirectory() + "/Documents/TakeNotes");
+                    File folderPath = new File(Environment.getExternalStorageDirectory() + "/Documents/AssignmentBuddy");
                     File[] imageList = folderPath.listFiles();
                     ArrayList<File> imagesArrayList = new ArrayList<>();
                     for (File absolutePath : imageList) {
@@ -162,7 +162,7 @@ public class More extends Fragment {
                     new CreatePdfTask(getContext(), imagesArrayList).execute();
                     Toast.makeText(getContext(),"PDF Created & Saved in Documents.",Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
-                    Toast.makeText(getContext(),"No Images In TakeNotes Directory.\nCreate Notes First!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(),"No Images In AssignmentBuddy Directory.\nCreate Notes First!",Toast.LENGTH_LONG).show();
                 }
             });
             }
@@ -343,7 +343,7 @@ public class More extends Fragment {
             else{
                 pdfNomenclature=saving_as;
             }
-            File outputMediaFile = new File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOCUMENTS + "/" + pdfNomenclature.trim() + " TakeNotes" + System.currentTimeMillis() + ".pdf");
+            File outputMediaFile = new File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOCUMENTS + "/" + pdfNomenclature.trim() + " AssignmentBuddy" + System.currentTimeMillis() + ".pdf");
             Document document = new Document(PageSize.A4, 38.0f, 38.0f, 50.0f, 38.0f);
             try {
                 PdfWriter.getInstance(document, new FileOutputStream(outputMediaFile));
