@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Assignment Buddy 2</string>
+    <string name="error_downloading">Error in Downloading</string>
+    <string name="success_toast">Note(s) Saved in Documents</string>
+    <string name="no_internet">Uh-Oh!</string>
+    <string name="wi_fi">Wi-Fi</string>
+    <string name="failed_to_load_fnt">Failed to Upload Font</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="def_name_on_userInfo">Your Name</string>
+    <string name="def_email">email@takenotes.com</string>
+    <string name="sign_out_greeting">Signing you out and closing app</string>
+    <string name="notifications_admin_channel_name">Remote Notification Service</string>
+    <string name="notifications_admin_channel_description">Channel for Remote Firebase Events</string>
+    <string name="developer">App Developed By One Silicon Diode ;)</string>
+    <string name="privacy_policy"><b>Privacy Policy</b>\n\nOne Silicon Diode built the Take Notes app as an Open Source app. This SERVICE is provided by One Silicon Diode at no cost and is intended for use as is.\n\nIf you choose to use Take Notes, then you agree to the collection and use of information in relation to this policy. <b>NO Data is ever sent, saved or stored in any form neither on the device nor online.</b>\n\n<b>Contact Us</b>\nIf you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <i>connectwithspandan@gmail.com</i>.</string>
+    <string name="facebook_app_id">349002433872203</string>
+    <string name="fb_login_protocol_scheme">fb839436513489183</string>
+    <string name="sign_in_with_facebook">Sign In with Facebook</string>
+    <string name="sign_in">Sign In with Google</string>
+    <string name="share_subject">Have a look at Take Notes</string>
+    <string name="share_using">Choose app to share Take Notes</string>
+    <string name="facebook_client_token">3d0761ff2489c4d4693582a6bba015f8</string>
+
+    <string-array name="greetings">
+        <item>Hello</item>
+        <item>नमस्ते</item>
+        <item>Hola</item>
+        <item>Olá</item>
+        <item>こんにちは</item>
+        <item>你好</item>
+        <item>Salve</item>
+        <item>హలో</item>
+        <item>안녕하세요</item>
+    </string-array>
+
+    <!--Intro-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start"><b>BEGIN</b></string>
+
+    <string name="slide_1_title">Welcome to Take Notes</string>
+    <string name="slide_1_desc">The easiest and fastest way to generate handwritten notes</string>
+
+    <string name="slide_2_title">Write almost anything on the real time paper</string>
+    <string name="slide_2_desc">Adjust the spacing and lines according to your desired output</string>
+
+    <string name="slide_3_title">Choose da Font</string>
+    <string name="slide_3_desc">Choose from one of the already provided fonts, or upload one of your own!</string>
+
+    <string name="slide_5_title">Get your magic wand ready, hit the button</string>
+    <string name="slide_5_desc">Your notes are ready steaming hot!</string>
+
+    <string name="slide_6_title">Tap Save Button</string>
+    <string name="slide_6_desc">Now that was a li\'ll obvious</string>
+
+    <string name="slide_7_title">Tip</string>
+    <string name="slide_7_desc">You can change themes by going in the \'Cockpit\'.</string>
+
+    <string name="slide_8_title">All set, Let\'s Begin!</string>
+    <string name="slide_8_desc">Remember, there is no alternative to handwritten notes\n\nThanks for downloading Take Notes</string>
+
+    <string name="slide_10_title">Got an Image with Text?</string>
+    <string name="slide_10_desc">Tap <b>OCR!</b>\nConvert all to text, just a tap.</string>
+
+    <string name="choose_image">Tap To Begin OCR.</string>
+    <string name="text_copied_to_clipboard_message">Text copied to the clipboard</string>
+    <string name="your_name">Default Name</string>
+    <string name="save">save</string>
+    <string name="oh_one_more_thing">One Last Thing.</string>
+    <string name="asking_storage_perm">Please provide the storage permissions otherwise where will the created notes go?</string>
+    <string name="rename_file_name">Rename File Name</string>
+    <string name="save_name">Save</string>
+    <string name="ocr">OCR</string>
+    <string name="more">Cockpit</string>
+    <string name="file_name">Default File Name</string>
+    <string name="skip_for_now">Skip for now</string>
+    <string name="switchLand">Switch Device to Portrait Mode to use Assignment Buddy.</string>
+    <string name="my_notes">My Notes</string>
+    <string name="notes_history">Notes History</string>
+    <string name="history_advise">History will start showing up as soon as you create notes!</string>
+    <string name="splash_screen_logo">Splash Screen Logo</string>
+    <string name="default_file_name">File Name</string>
+    <string name="tooltip_fileName">This name will be added to all the files saved from TakeNotes.</string>
+    <string name="profile">Profile</string>
+    <string name="dev_one">Spandan Saxena</string>
+    <string name="dev_two">Shrish Sharma</string>
+    <string name="awesomenotes">Create Awesome Notes.\nJust a Click Away.</string>
+    <string name="assignment">Assignment</string>
+    <!--    <string name="default_web_client_id1">927910997139-cfi8se1uglfipt2t9ipsnflc567lggn8.apps.googleusercontent.com</string>-->
+
+</resources>

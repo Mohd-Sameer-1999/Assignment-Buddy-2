@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-125454191-4');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#535353" />
+    <meta
+      name="description"
+      content="text to handwriting, text-to-handwrting, take notes, convert text to image, write assignments"
+    />
+    
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Spandan Saxena" />
+    <meta name="copyright" content="Shrish Sharma" />
+    <meta name="robots" content="follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Take Notes" />
+    <meta
+      property="og:url"
+      content="https://the-rebooted-coder.github.io/Take-Notes/"
+    />
+    <meta
+      property="og:description"
+      content="Lot's of assignment? Relax we're here to save your day!"
+    />
+    <meta property="og:site_name" content="Take Notes" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="337" />
+
+    <title>Take Notes</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Homemade+Apple|Roboto|Caveat|Liu+Jian+Mao+Cao&display=swap"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/glassui.css">
+    <link rel="stylesheet" href="./css/features.css" />
+  </head>
+
+  <body>
+    <main>
+      <button
+        aria-label="Activate Dark Mode"
+        title="Toggle Dark Mode"
+        aria-pressed="false"
+        onclick="toggleTheme(this)"
+        class="dark-mode-toggle"
+      >
+      <span class="sun">
+        <img
+          alt="sun icon that represents light mode"
+          width="75px"
+          src="images/Light.png"
+      /></span>
+      <span class="moon"
+        ><img
+          alt="moon icon to represent dark mode "
+          width="75px"
+          src="images/Dark.png"
+      /></span>
+      </button>
+      <h1 class="land-head">Take Notes</h1>
+      <section class="generate-image-section">
+        <form id="generate-image-form">
+          <!-- Generate Image Section -->
+          <div class="display-flex output-grid responsive-flex">
+            <div class="flex-1 page-container-super">
+              <!-- <div>
+                <h4>Your Text Goes Here</h4>
+                <label class="block" for="note">Type or Paste text here and see changes in real-time!</label>
+              </div> -->
+
+              <div class="flex-1 page-container">
+                <div class="page-a margined lines">
+                  <div contenteditable="true" class="top-margin"></div>
+                  <div class="display-flex left-margin-and-content">
+                    <div contenteditable="true" class="left-margin"></div>
+                    <div class="paper-content" id="note" contenteditable="true">
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+                <br />
+              </div>
+              <div>
+                <button
+                  id="draw-diagram-button"
+                  type="button"
+                  style="font-size: 0.9rem; margin-top: 5px; display: none;"
+                  class="draw-button"
+                >
+                  Add Drawing <small>(Under β)</small>
+                </button>
+              </div>
+            </div>
+
+            <div class="customization-col">
+              <!-- Handwriting Font -->
+              <div style="padding: 5px 0px 5px 0px;">
+                <b>Page Settings</b>
+              </div>
+              <fieldset class="glass-ui">
+                <legend>Handwriting</legend>
+
+                <div class="category-grid">
+                  <div>
+                    <label class="block" for="handwriting-font">
+                      Handwriting Font</label>
+                    <select id="handwriting-font">
+                      <option
+                        selected
+                        style="font-family: 'Homemade Apple';"
+                        value="'Homemade Apple', cursive"
+                      >
+                        Just Perfect
+                      </option>
+                      <option value="Hindi_Font">
+                        Hindi
+                      </option>
+                      <option
+                        style="font-family: 'Caveat', cursive; font-size: 13pt;"
+                        value="'Caveat', cursive"
+                      >
+                        Just Fit
+                      </option>
+                      <option
+                        style="
+                          font-family: 'Liu Jian Mao Cao';
+                          font-size: 13pt;
+                        "
+                        value="'Liu Jian Mao Cao', cursive"
+                      >
+                        Resham
+                      </option>
+                      <option value="Juet">
+                        JUET
+                      </option>
+                      <option value="Paneer">
+                        Paneer
+                      </option>
+                      <option value="Duh">
+                        Duh! ¯\_(ツ)_/¯
+                      </option>
+                      <option value="The Assignment-Inator">
+                        The Assignment-Inator
+                      </option>
+                      <option value="Backbencher Best Pal">
+                        Backbencher's Best Pal
+                      </option>
+                      <!--New Fonts Here-->
+                      <option value="Bleh">
+                        Bleh
+                      </option>
+                      <option value="Breathtaking">
+                        Breathtaking
+                      </option>
+                      <option value="Expelliarmus">
+                        Expelliarmus
+                      </option>
+                      <option value="One Nice Handwriting">
+                        One Nice Handwriting
+                      </option>
+                      <option value="Populaire">
+                        Populaire
+                      </option>
+                      <option value="Riddikulus">
+                        Riddikulus
+                      </option>
+                      <option value="Mine">
+                        This is For You!
+                      </option>
+                      <option value="Blue Meth">
+                        Blue Meth
+                      </option>
+                      <option value="Trinity Knot">
+                        Trinity Knot
+                      </option>
+                      <option value="Frostbite">
+                        FrostByte
+                      </option>
+                      <!--New Fonts Here-->
+                    </select>
+                  </div>
+                  <div class="upload-handwriting-container">
+                    <label class="block" for="font-file"
+                      >Upload your handwriting
+                    </label>
+                    <input accept=".ttf, .otf" type="file" id="font-file" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Letter spacing, Paper Margin, Paper Lines, Paper Curvature -->
+              <!-- <fieldset class="glass-ui">
+                <legend>Margin & Line Options</legend>
+
+                <div class="category-grid">
+                  
+                </div>
+              </fieldset> -->
+
+              <!-- Pen ink color, Font size, Vertical position text, Word Spacing -->
+              <fieldset class="glass-ui">
+                <legend>Page & Margin Settings</legend>
+
+                <div class="category-grid">
+                  <div class="postfix-input" data-postfix="pt">
+                    <label for="font-size">Font Size</label>
+                    <input
+                      id="font-size"
+                      min="0"
+                      step="0.5"
+                      value="10"
+                      type="number"
+                    />
+                  </div>
+                  <div>
+                    <label class="block" for="ink-color">Ink Color</label>
+                    <select id="ink-color">
+                      <option default value="#000f55">Really Blue</option>
+                      <option value="black">Pitch Black</option>
+                      <option value="#ba3807">Just Red</option>
+                    </select>
+                  </div>
+                  <div style="display: none;">
+                    <label class="block" for="page-size">Page Size</label>
+                    <select id="page-size">
+                      <option default value="a4">A4 &nbsp;</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="page-effects">Effects</label>
+                    <select id="page-effects">
+                      <option default value="shadows">Shadows</option>
+                      <option value="scanner">Scanner</option>
+                      <option value="no-effect">No Effect</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="resolution">Resolution</label>
+                    <select id="resolution">
+                      <option value="0.8">HD</option>
+                      <option value="1">HD+</option>
+                      <option selected value="2">FHD</option>
+                      <option value="3">Quad HD</option>
+                      <option value="4">4K</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="paper-margin-toggle"
+                      >Paper Margin:
+                      <span aria-label="paper margin status" class="status"
+                        >on</span
+                      >
+                    </label>
+                    <label class="switch-toggle outer">
+                      <input
+                        aria-checked="true"
+                        checked
+                        aria-label="Paper Margin Button"
+                        id="paper-margin-toggle"
+                        type="checkbox"
+                      />
+                      <div></div>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label for="paper-line-toggle"
+                      >Paper Lines:
+                      <span aria-label="paper line status" class="status"
+                        >on</span
+                      >
+                    </label>
+                    <label class="switch-toggle outer">
+                      <input
+                        aria-checked="true"
+                        checked
+                        aria-label="Paper Line Button"
+                        id="paper-line-toggle"
+                        type="checkbox"
+                      />
+                      <div></div>
+                    </label>
+                  </div>
+                  <div class="experimental" style="display: none;">
+                    <label for="paper-curve-toggle"
+                      >Paper Curve:
+                      <span aria-label="paper curve status" class="status"
+                        >off</span
+                      >
+                    </label>
+                    <label
+                      title="Paper Curve (Yet to be implemented)"
+                      class="switch-toggle outer"
+                      style="cursor: not-allowed !important;">
+                      <input
+                        aria-checked="false"
+                        aria-label="Paper Curve Button"
+                        id="paper-curve-toggle"
+                        type="checkbox"/>
+                      <div></div>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="glass-ui" style="display: none;">
+                <legend>Spacing Options</legend>
+
+                <div class="category-grid">
+                  <div class="postfix-input" data-postfix="px">
+                    <label for="top-padding">Vertical Position</label>
+                    <input id="top-padding" min="0" value="5" type="number" />
+                  </div>
+                  <div class="postfix-input" data-postfix="px">
+                    <label for="word-spacing">Word Spacing</label>
+                    <input id="word-spacing" min="0" value="0" type="number" />
+                  </div>
+                  <div class="postfix-input" data-postfix="pt">
+                    <label for="letter-spacing">Letter Spacing</label>
+                    <input id="letter-spacing" value="0" type="number" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- GENERATE IMAGE BUTTONS -->
+              <div style="text-align: center; padding: 30px 0px;">
+                <button
+                  type="submit"
+                  data-testid="generate-image-button"
+                  class="button generate-image-button"
+                  onclick="showHistory()">
+                Create Notes
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- OUTPUT -->
+      <section>
+        <h4 id="output-header" style="text-align: center;">Results</h4>
+        <div id="output" class="output glass-ui" style="color: #fff; text-align: center; overflow-wrap: break-word;">
+          Click the "Create Notes" Button.
+        </div>
+        <div style="text-align: center; padding: 30px;">
+          <button class="imp-button" id="download-as-pdf-button" style="display: none;">
+            <a href='https://the-rebooted-coder.github.io/Take-Notes/loader.png'>Export Folder as PDF</a>
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- History Div -->
+    <div id="history" style="display: none;">
+      History
+    </div>
+
+    <!-- Draft Div -->
+    <div id="draft" style="display: none;">
+      Draft
+    </div>
+    <script>
+        // Log History
+        function showHistory(){
+          let text = document.getElementById('note').textContent;
+          let history = document.getElementById('history');
+          history.innerHTML = text;
+          Android.showToast(text);
+        }
+
+        // Save Draft
+        setInterval(
+            function saveDraftInterval() {
+            let text = document.getElementById('note').textContent;
+            let draft = document.getElementById('draft');
+            draft.innerHTML = text;
+            Draft.saveDraft(text);
+          }, 1000);
+    </script>
+
+    <!-- Fixed Elements -->
+    <section class="draw-container popup-container">
+      <button class="close-button">&times;</button>
+      <div class="display-flex responsive-flex">
+        <canvas
+          id="diagram-canvas"
+          style="background-color: #fff;"
+          height="300px"
+          width="600px"
+        ></canvas>
+        <div class="flex-1 buttons-container padding-around">
+          <button
+            id="add-to-paper-button"
+            style="margin-top: 5px; margin-bottom: 5px;"
+          >
+            Add to Paper
+          </button>
+          <button
+            id="draw-download-button"
+            style="margin-top: 5px; margin-bottom: 5px;"
+          >
+            Save Image
+          </button>
+          <br /><br />
+          <input
+            type="file"
+            id="image-to-add-in-canvas"
+            accept="image/x-png,image/jpeg"
+            hidden="hidden"
+          />
+          <br /><br /><button id="add-new-image-button">Add bg image</button>
+          <br /><br />
+          <button
+            id="clear-draw-canvas"
+            class="blue-button"
+            style="background-color: #f30; color: #fff;"
+          >
+            Clear Canvas
+          </button>
+        </div>
+      </div>
+    </section>
+    <script
+      src="./js/vendors/html2canvas.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/app.mjs"></script>
+    <script defer src="https://unpkg.com/jspdf@^1/dist/jspdf.min.js"></script>
+    <script>
+      function toggleTheme(toggleButton) {
+        if (document.body.classList.contains('dark')) {
+          document.body.classList.add('fade-in-light');
+          document.body.classList.remove('dark');
+          document.body.classList.remove('fade-in-dark');
+          window.localStorage.setItem('prefers-theme', 'light');
+          if (toggleButton) {
+            toggleButton.setAttribute('aria-pressed', false);
+            toggleButton.setAttribute('aria-label', 'Activate Dark Mode');
+          }
+        } else {
+          document.body.classList.add('fade-in-dark');
+          document.body.classList.add('dark');
+          document.body.classList.remove('fade-in-light');
+          window.localStorage.setItem('prefers-theme', 'dark');
+          if (toggleButton) {
+            toggleButton.setAttribute('aria-pressed', true);
+            toggleButton.setAttribute('aria-label', 'Activate Light Mode');
+          }
+        }
+      }
+      const localPreference = window.localStorage.getItem('prefers-theme');
+      if (localPreference) {
+        if (localPreference === 'light') document.body.classList.remove('dark');
+        else document.body.classList.add('dark');
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>

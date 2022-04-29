@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#535353</color>
+    <color name="colorPrimaryDark">#bebcc9</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="notification">#EC7979</color>
+    <color name="fb_blue">#3b5998</color>
+    <color name="black">#000000</color>
+
+    <!-- Screens background color-->
+
+    <!-- dots inactive colors -->
+
+    <!-- dots active colors -->
+    <color name="offwhite">#F5F5F5</color>
+
+    <color name="notReallyBlue">#19112E</color>
+</resources>

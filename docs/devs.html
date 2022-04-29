@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#535353" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Spandan Saxena" />
+    <meta name="copyright" content="Spandan Saxena" />
+    <meta name="robots" content="follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Take Notes" />
+    <title>Meet The Devs | Take Notes</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Homemade+Apple|Roboto|Caveat|Liu+Jian+Mao+Cao&display=swap"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+<style>
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.267);
+  border-radius: 10px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  box-shadow: var(--box-shadow);
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #ffffff;
+  color: #000000;
+  transform: rotateY(180deg);
+}
+
+.dev-head {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-avatar {
+  border-radius: 15px;
+}
+
+</style>
+</head>
+<body>
+    <main>
+        <button
+        aria-label="Activate Dark Mode"
+        title="Toggle Dark Mode"
+        aria-pressed="false"
+        onclick="toggleTheme(this)"
+        class="dark-mode-toggle">
+      <span class="sun">
+        <img
+          alt="sun icon that represents light mode"
+          width="75px"
+          src="images/Light.png"
+      /></span>
+      <span class="moon"
+        ><img
+          alt="moon icon to represent dark mode "
+          width="75px"
+          src="images/Dark.png"
+      /></span>
+      </button>
+      <h1 class="dev-head">Meet The Devs!</h1>
+      <section style="font-size: 1rem; padding: 20px 0px;">
+        <p style="text-align: center;">Development is an Art!<br>We tried to be as much abstract as possible.
+            Enjoy Take Notes! &#10084; 🎊</p>
+      </section>
+      <section class="avatar" style="font-size: 1rem; padding: 20px 0px;">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/Spandan Saxena.jpg" alt="Avatar" class="img-avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back img-avatar">
+                <h1>Spandan Saxena</h1>
+                <a href="https://github.com/the-rebooted-coder"><i class="fa fa-github fa-2x"></i></a> &nbsp;
+                <a href="https://www.linkedin.com/in/spandn/"><i class="fa fa-linkedin fa-2x"></i></a> &nbsp;
+                <a href="https://spandansaxena.codes"><i class="fa fa-globe fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/Shady.jpeg" alt="Avatar" class="img-avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back img-avatar">
+                <h1>Shrish Sharma</h1>
+                <a href="https://github.com/shrish-sharma-git"><i class="fa fa-github fa-2x"></i></a> &nbsp;
+                <a href="https://www.linkedin.com/in/shrish-sharma"><i class="fa fa-linkedin fa-2x"></i></a> &nbsp;
+                <a href="https://shrish-sharma-git.github.io/My-Portfolio/"><i class="fa fa-globe fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+          <p style="text-align: center;">Thank you for using Take Notes App
+            Remember: There's no alternative to handwritten notes!</p>
+      </section>
+    </main>
+
+        
+    <script
+      src="./js/vendors/html2canvas.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/app.mjs"></script>
+    <script defer src="https://unpkg.com/jspdf@^1/dist/jspdf.min.js"></script>
+    <script>
+      function toggleTheme(toggleButton) {
+        if (document.body.classList.contains('dark')) {
+          document.body.classList.add('fade-in-light');
+          document.body.classList.remove('dark');
+          document.body.classList.remove('fade-in-dark');
+          window.localStorage.setItem('prefers-theme', 'light');
+          if (toggleButton) {
+            toggleButton.setAttribute('aria-pressed', false);
+            toggleButton.setAttribute('aria-label', 'Activate Dark Mode');
+          }
+        } else {
+          document.body.classList.add('fade-in-dark');
+          document.body.classList.add('dark');
+          document.body.classList.remove('fade-in-light');
+          window.localStorage.setItem('prefers-theme', 'dark');
+          if (toggleButton) {
+            toggleButton.setAttribute('aria-pressed', true);
+            toggleButton.setAttribute('aria-label', 'Activate Light Mode');
+          }
+        }
+      }
+
+      const localPreference = window.localStorage.getItem('prefers-theme');
+      if (localPreference) {
+        if (localPreference === 'light') document.body.classList.remove('dark');
+        else document.body.classList.add('dark');
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+      }
+    </script>
+</body>
+</html>

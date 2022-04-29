@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoInternet">
+
+    <!--This Activity Will Get Opened In Case of No Internet-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/no_internet_anime"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="no_connection.json"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/productsansbold"
+        android:text="@string/no_internet"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <Switch
+        android:id="@+id/switcher"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/fb_blue"
+        android:fontFamily="@font/productsans"
+        android:text="@string/wi_fi"
+        android:layout_below="@+id/no_internet_anime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>
